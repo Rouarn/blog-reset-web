@@ -18,7 +18,7 @@ declare namespace Env {
     readonly VITE_PORT: number
     /** 是否在浏览器中自动打开应用 */
     readonly VITE_OPEN: CommonType.YesOrNo
-    /** 是否使用 https */
+    /** 开发环境代理规则：[[前缀, 目标地址], ...] 的 JSON 字符串 */
     readonly VITE_PROXY: string
     /** 是否启用 HTTP 代理 */
     readonly VITE_HTTP_PROXY: CommonType.YesOrNo
@@ -32,7 +32,7 @@ declare namespace Env {
     readonly VITE_STORAGE_PREFIX: string
     /** Node 运行环境 */
     readonly VITE_USER_NODE_ENV: 'development' | 'production'
-    /** 是否启用 Vue DevTools */
+    /** DevTools 打开组件源码时使用的编辑器命令 */
     readonly VITE_DEVTOOLS_LAUNCH_EDITOR: import('vite-plugin-vue-devtools').VitePluginVueDevToolsOptions['launchEditor']
     /** 是否自动检测更新 */
     readonly VITE_AUTOMATICALLY_DETECT_UPDATE: CommonType.YesOrNo
