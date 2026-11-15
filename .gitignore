@@ -28,3 +28,8 @@ coverage
 *.tsbuildinfo
 
 .temp
+
+# 环境变量：真实配置只留在本地，仓库只提交示例文件
+.env
+.env.*
+!.env.example

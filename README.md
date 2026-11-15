@@ -65,11 +65,14 @@ git clone https://github.com/Rouarn/blog-reset-version.git
 # 2. 安装依赖
 pnpm install
 
-# 3. 启动项目
+# 3. 配置环境变量（真实 env 不入库，按 .env.example 内各分节分别生成）
+#    .env / .env.development / .env.production
+
+# 4. 启动项目
 pnpm dev
 ```
 
-访问：`http://localhost:5173`
+访问：`http://localhost:8848`（端口由 `.env` 中的 `VITE_PORT` 决定）
 
 ## 📁 项目结构
 
